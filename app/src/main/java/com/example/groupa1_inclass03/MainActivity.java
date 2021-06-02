@@ -1,7 +1,7 @@
 package com.example.groupa1_inclass03;
 /*
-* InClass03
-* Group A1 - Deanna Rajkowski and Kris Bowen
+ * InClass03
+ * Group A1 - Deanna Rajkowski and Kris Bowen
  */
 import androidx.appcompat.app.AppCompatActivity;
 
