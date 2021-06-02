@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DepartmentActivity">
+
+    <RadioGroup
+        android:id="@+id/departmentGroup"
+        android:layout_width="266dp"
+        android:layout_height="197dp"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="25dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonCS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computer Science" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSIS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Software Info. Systems" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBIO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bio Informatics" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Science" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="159dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSelect"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSelect"
+        android:layout_width="176dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="Select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
