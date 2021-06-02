@@ -6,11 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 public class DepartmentActivity extends AppCompatActivity {
+    final String A = "Arrived at: ";
 
     private RadioButton deptButton;
     final static public String DEPT_KEY = "testdept";
@@ -22,16 +24,17 @@ public class DepartmentActivity extends AppCompatActivity {
 
         RadioGroup deptGroup = findViewById(R.id.departmentGroup);
 
-
         //department info is retrieved by clicking the "Select" button
         //need toast messaging for invalid inputs
-        findViewById(R.id.buttonSubmit).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.buttonSelect).setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onClick(View v)
             {
+                Log.d(A, "deptButton's buttonSubmit onClick");
                 int selectedDept = deptGroup.getCheckedRadioButtonId();
                 deptButton = (RadioButton) findViewById(selectedDept);
+                Log.d(A, "depButton's buttonSubmit findViewbyId selectedDept");
 
                 Intent intent = new Intent(DepartmentActivity.this, MainActivity.class);
                 String departmentText = deptButton.getTransitionName();

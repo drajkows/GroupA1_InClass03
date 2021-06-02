@@ -10,8 +10,11 @@
         android:id="@+id/departmentGroup"
         android:layout_width="266dp"
         android:layout_height="197dp"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="25dp">
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
             android:id="@+id/radioButtonCS"
@@ -40,23 +43,21 @@
 
     <Button
         android:id="@+id/buttonCancel"
-        android:layout_width="159dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
         android:layout_marginBottom="24dp"
         android:text="Cancel"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSelect"
-        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonSelect"
-        android:layout_width="176dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
         android:layout_marginBottom="24dp"
         android:text="Select"
         app:layout_constraintBottom_toBottomOf="parent"

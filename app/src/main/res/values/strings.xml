@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">GroupA1_InClass03</string>
+    <string name="deptLabel">Dept:</string>
+    <string name="emailLabel">Email:</string>
+    <string name="nameLabel">Name:</string>
+    <string name="nameEntryHint">Enter Name</string>
+    <string name="emailEntryHint">Enter Email</string>
+    <string name="idLabel">ID:</string>
+    <string name="idEntryHint">Enter ID</string>
+    <string name="selectButton">Select</string>
+    <string name="submitButton">Submit</string>
 </resources>
